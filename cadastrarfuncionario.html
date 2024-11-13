@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bela Pizza - Cadastar Funcionário</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7C1515;
+        }
+
+        .logo{
+            background-color: #7C1515;
+            width: 20%;
+            height: 500px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+
+        .cadastro{
+            background-color: coral;
+            display: flex;
+            width: 30%;
+            flex-direction: column;
+            padding: 30px;
+            height: 500px;
+            border-radius: 16px;
+            color: white;
+        }
+        .botao{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+        }
+
+        button{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: orange;
+            color: white;
+        }
+
+        input{
+            padding: 10px;
+        }
+
+        a{
+            width: 150px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img width="190" height="140" src="logopizza.png">
+        <h3>Cadastrar novo Funcionário</h3>
+        <a href="menuprincipal.html" style="text-decoration: none;"><button>Menu Principal</button></a>
+        <a href="funcionarios.html" style="text-decoration: none;"><button>Funcionários</button></a>
+
+    </div>
+    <form class="cadastro" method="post" action="bandoDeDados.php">
+            <h2>Cadastro</h2>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+            <br>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Digite um nome de usuário">
+            <br>
+            <label for="senha">Senha</label>
+            <input type="passwords" id="senha" name="senha" placeholder="Digite uma senha">
+            <br>
+            <label for="confirmarsenha">Confirmar Senha</label>
+            <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha">
+            <br>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="Digite o seu e-mail">
+            <br>
+            <div class="botao">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    
+</body>
+</html>

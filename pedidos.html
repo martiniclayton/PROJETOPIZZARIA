@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos em Andamento - Bela Pizza</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7c1515;
+        }
+
+        .topo{
+            width: 1200px;
+            background-color: #7c1515;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .logoetitulo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .botoesnavegacao{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botoesnavegacao button{
+            width: 150px;
+            height: 25px;
+            border: 2px solid white;
+            background-color: #7c1515;
+            color: white;
+            margin: 3px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botoesnavegacao button:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid #7c1515;
+        }
+
+        .logo{
+            
+        }
+
+        .titulo{
+            background-color: #7c1515;
+            width: 799px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .botaopa button{
+            background-color: coral;
+            border: 2px solid white;
+            color: white;
+            cursor: default;
+        }
+        .botaopa button:hover{
+            background-color: coral;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .corpo{
+            width: 100%;
+            background-color: #f1f5f6;
+        }
+        table{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        td{
+            border: 2px solid black;
+            width: 200px;
+            text-align: center;
+            background-color:  white;
+            color: white;
+        }
+
+        td button{
+            width: 150px;
+        }
+
+        .pronto{
+            background-color: green;
+            color:white ;
+        }
+
+        .sms{
+            background-color: blue;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <div class="botoesnavegacao">
+            <a href="menuprincipal.html" style="text-decoration: none;"><button>Menu Principal</button></a>
+            <div class="botaopa">
+                <button>Pedidos</button>
+            </div>
+            <a href="CadastrarCliente.html" style="text-decoration: none;"><button>Cadastrar Cliente</button></a>
+            <a href="novoPedido.html" style="text-decoration: none;"><button>Novo Pedido</button></a>
+            <a href="estoque.html" style="text-decoration: none;"><button>Estoque</button></a>
+            <a href="relatoriovendas.html" style="text-decoration: none;"><button>Faturamento</button></a>
+            <a href="Clientes.html" style="text-decoration: none;"><button>Clientes</button></a>
+        </div>
+        <div class="logoetitulo">
+            <div class="logo">
+                <img width="200px" height="50px" src="logobela.png">
+            </div>
+            <div class="titulo">
+                <h2>Pedidos em Andamento</h2>
+            </div>
+        </div>
+    </div>
+    <div class="corpo">
+        <table>
+            <tr>
+                <td style="background-color: coral;">ID</td>
+                <td style="background-color: coral;">Cliente</td>
+                <td style="background-color: coral;">Pedido</td>
+                <td style="background-color: coral;">Status</td>
+                <td style="background-color: coral;">Marcar Pronto</td>
+                <td style="background-color: coral;">Enviar SMS</td>
+            </tr>
+            <tr>
+                <td>"</td>
+                <td>"</td>
+                <td>"</td>
+                <td>"</td>
+                <td><button class="pronto">Pronto</button></td>
+                <td><button class="sms">Enviar SMS</button></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topo{
+            display: flex;
+            flex-direction: row;
+            width: 1200px;
+            background: linear-gradient(to right, #7c1515, #E22626);
+
+        }
+        .botoes{
+            padding: 15px;
+            width: 770px;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .botoes button{
+            color: white;
+            margin: 3px;
+            background-color: #7C1515;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 150px;
+            height: 25px;
+        }
+
+        .botoesetitulo button{
+            color: white;
+            margin: 3px;
+            background-color: #7C1515;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 120px;
+            height: 25px;
+            
+        }
+        .titulo{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 800px;
+
+
+        }
+        .corpo{
+            display: flex;
+            flex-direction: row;
+            width: 1000px;
+        }
+
+        .E{
+            width: 500px;
+            background-color: white;
+        }
+        .D{
+            width: 500px;
+            background-color: white;
+        }
+        select{
+            padding: 10px;
+        }
+        label{
+            padding: 5px;
+        }
+        input{
+            padding: 10px;
+        }
+
+        .botaoadcpizza{
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .botaoadcpizza button{
+            background-color: #7C1515;
+            color: white;
+            width: 150px;
+            cursor: pointer;
+            height: 30px;
+        }
+
+        .botaoadcpizza button:hover{
+            border-color: white;
+        }
+        .botoescliente{
+            padding: 5px;
+            width: 404px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .botoescliente button{
+            width: 150px;
+            height: 30px;
+            color: white;
+            background-color: #7C1515;
+            cursor: pointer;
+            margin: 3px;
+        }
+
+        .botoescliente button:hover{
+            border-color: white;
+
+        }
+        .botaofinal{
+            width: 404px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .botaofinal button{
+            height: 30px;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .botaofinal button:hover{
+            border-color: white;
+
+        }
+
+        .botaopagina button{
+            background-color: coral;
+        }
+
+        
+        .botoes button:hover{
+            border: 2px solid #7C1515;
+            background-color: white;
+            color: black;
+        }
+        
+        .botaopagina button:hover{
+            border: 2px solid white;
+            background-color: coral;
+            color: white;
+            cursor: default;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <div class="logo">
+            <img width="200" height="120" src="logopizza.png
+            ">
+        </div>
+        <div class="botoesetitulo">
+            <div class="botoes">
+                <A href="menuprincipal.html">
+
+                    <button>Menu Principal</button>
+                </A>
+                <button>Pedidos</button>
+
+                <div class="botaopagina">
+
+                    <button>Novo Pedido</button>
+                </div>
+                <button>Menu Principal</button>
+                <button>Menu Principal</button>
+                <button>Menu Principal</button>
+            </div>
+            <div class="titulo">
+                <h2>Novo Pedido</h2>
+            </div>
+        </div>
+    </div>
+    <div class="corpo">
+        <div class="E">
+            <br>
+            <label for="sabor">Sabor da Pizza</label>
+            <br>
+            <select type="text" id="sabor" style="width: 80%;">
+                <option>Escolha um sabor</option>
+                <option>Escolha um sabor</option>
+                <option>Escolha um sabor</option>
+                <option>Escolha um sabor</option>
+
+            </select>
+            <br>
+
+            <label for="sabor">Tamanho</label>
+            <br>
+            <select type="text" id="sabor" style="width: 80%;">
+                <option>Escolha o tamanho</option>
+                <option>Escolha o tamanho</option>
+                <option>Escolha o tamanho</option>
+                <option>Escolha o tamanho</option>
+
+            </select>
+            <label for="sabor">Acompanhamento</label>
+            <br>
+            <select type="text" id="sabor" style="width: 80%;">
+                <option>Escolha o Acompanhamento</option>
+                <option>Escolha o Acompanhamento</option>
+                <option>Escolha o Acompanhamento</option>
+                <option>Escolha o Acompanhamento</option>
+
+            </select>
+
+            <div class="botaoadcpizza">
+                <br>
+                <button>Adcionar pizza</button>
+            </div>
+
+            <label for="detalhespedido">Detalhes do Pedido</label>
+            <input type="text" id="detalhespedido" style="width: 78%; height: 100px;">
+
+            <label for="sabor">Refrigerante</label>
+            <br>
+            <select type="text" id="sabor" style="width: 80%;">
+                <option>Escolha o Refrigerante</option>
+                <option>Escolha o Refrigerante</option>
+                <option>Escolha o Refrigerante</option>
+                <option>Escolha o Refrigerante</option>
+
+            </select>
+            <br>
+
+            <label for="sabor">Quantidade</label>
+            <select type="text" id="sabor" style="width: 143px;">
+                <option>Quantidade</option>
+                <option>Quantidade</option>
+                <option>Quantidade</option>
+                <option>Quantidade</option>
+
+            </select>
+
+        </div>
+        <div class="D">
+            <br>
+            <label for="obs">Observações</label>
+            <input type="text" id="obs" style="width: 80%; height: 100px;">
+            <br>
+
+            <label for="buscarcliente">Buscar Cliente</label>
+            <input type="text" id="buscarcliente" style="width: 80%;">
+
+            <div class="botoescliente">
+                <button>Buscar Cliente</button>
+                <button>Editar Cliente</button>
+                <button>Cadastrar Cliente</button>
+            </div>
+
+            <div class="botaofinal">
+                <br>
+                <br>
+                <br>
+                <br>
+                <button style="color: #7C1515; border-color: #7C1515; ">Cancelar</button>
+                <a href="confirmarPedido.html">
+
+                    <button style="background-color: #389543; color: white;">Finalizar Pedido</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

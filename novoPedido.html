@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7c1515;
+        }
+
+        .topo{
+            width: 1200px;
+            background-color: #7c1515;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botoesnavegacao{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .botoesnavegacao button{
+            margin: 3px;
+            width: 150px;
+            height: 25px;
+            background-color: #7c1515;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botoesnavegacao button:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid #7c1515;
+        }
+
+        .botaopa button{
+            background-color: coral;
+            cursor: default;
+        }
+
+        .botaopa button:hover{
+            background-color: coral;
+            border: 2px solid white;
+            color: white;
+            cursor: default;
+        }
+
+        .logoetitulo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+        .logo{
+
+        }
+
+        .titulo{
+            width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .corpo{
+            width: 100%;
+            background-color: aliceblue;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .corpoE{
+            width: 500px;
+            padding: 10px;
+            height: 460px;
+        }
+        .corpoD{
+            height: 460px;
+            width: 500px;
+            padding: 10px;
+        }
+        select{
+            width: 400px;
+            padding: 8px;
+        }
+
+        .botaoadcpizza{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 380px;
+        }
+
+        .botaoadcpizza button{
+            width: 150px;
+            height: 30px;
+            background-color: coral;
+            color: white;
+            border: 2px solid chocolate;
+            cursor: pointer;
+        }
+
+        .botaoadcpizza button:hover{
+            background-color: #7c1515;
+            border: 2px solid #F1F5f6
+
+        }
+        input{
+            width: 392px;
+            height: 120px;
+        }
+
+        .botoescliente{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            width: 380px;
+        }
+        .botoescliente button{
+            background-color: coral;
+            border: 2px solid chocolate;
+            color: white;
+            margin: 3px;
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .botoescliente button:hover{
+            background-color: #7c1515;
+            border: 2px solid #f1f5f6;
+        }
+
+        .botoesconfirmacao{
+            width: 380px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .botoesconfirmacao button{
+            margin: 5px;
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .botoesconfirmacao .botaocancelar{
+            background-color: white;
+            border: 2px solid #7c1515;
+            color: #7c1515;
+        }
+
+        .botoesconfirmacao button:hover{
+            border: 2px solid #f1f5f6;
+        }
+
+        .botoesconfirmacao .botaofinalizar{
+            background-color: #389543;
+            color: white;
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <div class="botoesnavegacao">
+            <a href="menuprincipal.html" style="text-decoration: none;"><button>Menu Principal</button></a>
+            <a href="pedidos.html" style="text-decoration: none;"><button>Pedidos</button></a>
+            <a href="CadastrarCliente.html" style="text-decoration: none;"><button>Cadastrar Cliente</button></a>
+            <div class="botaopa">
+
+                <button>Novo Pedido</button>
+            </div>
+            <a href="estoque.html" style="text-decoration: none;"><button>Estoque</button></a>
+            <a href="relatoriovendas.html" style="text-decoration: none;"><button>Faturamento</button></a>
+            <a href="Clientes.html" style="text-decoration: none;"><button>Clientes</button></a>
+        </div>
+        <div class="logoetitulo">
+            <div class="logo">
+                <img width="200px" height="50px" src="logobela.png">
+            </div>
+            <div class="titulo">
+                <h2>Novo Pedido</h2>
+            </div>
+        </div>
+    </div>
+    <div class="corpo">
+        <div class="corpoE">
+            <br>
+            <label for="sabor">Sabor da Pizza</label>
+            <br>
+            <select id="sabor">
+                <option>Escolha o Sabor</option>
+                <option>sabor1</option>
+                <option>sabor1</option>
+                <option>sabor1</option>
+                <option>sabor1</option>
+                <br>
+            </select>
+            <br>
+            <label for="tamanho">Tamanho</label>
+            <br>
+            <select id="tamanho">
+                <option>Escolha o Tamanho</option>
+                <option>Tamanhp</option>
+                <option>Tamanhp</option>
+                <option>Tamanhp</option>
+                <option>Tamanhp</option>
+            </select>
+            <br>
+            <label for="Acompanhamento">Acompanhamento</label>
+            <br>
+            <select id="Acompanhamento">
+                <option>Escolha o Acompanhamento</option>
+                <option>Acompanhamento</option>
+                <option>Acompanhamento</option>
+                <option>Acompanhamento</option>
+                <option>Acompanhamento</option>
+            </select>
+            <div class="botaoadcpizza">
+                <button>Adcionar Pizza</button>
+            </div>
+            <label for="detalhespedido">Detalhes do Pedido</label>
+            <br>
+            <input type="text" id="detalhespedido">
+            <br>
+            <label for="refrigerante">Refrigerante</label>   
+            <br>
+            <select id="refrigerante">
+                <option>Escolha o Refrigerante</option>
+                <option>Escolha o Refrigerante</option>
+                <option>Escolha o Refrigerante</option>
+                <option>Escolha o Refrigerante</option>
+            </select>        
+            <br>
+            <label for="Quantidade">Quantidade</label>
+            <select id="Quantidade" style="width: 170px;">
+                <option>Escolha a Quantidade</option>
+                <option>Escolha a Quantidade</option>
+                <option>Escolha a Quantidade</option>
+                <option>Escolha a Quantidade</option>   
+            </select>
+            <br>
+            
+        </div>
+        <div class="corpoD">
+            <br>
+            <label for="Observações"> Observações</label>
+            <br>
+            <input type="text" id="Observações">
+            <br>
+            <label for="buscarcliente"> Buscar Cliente</label>
+            <br>
+            <input type="text" id="buscarcliente" style="height: 20px;">
+            <div class="botoescliente">
+                <button>Buscar Cliente</button>
+                <button>Editar Cliente</button>
+                <button>Cadastrar Cliente</button>
+            </div>
+            <br>
+            <br>
+            <div class="botoesconfirmacao">
+                <button class="botaocancelar">Cancelar</button>
+                <button class="botaofinalizar">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>Bela Pizza - Menu Principal</title>
+
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: brown;
+                color: aliceblue;
+            }
+
+            .conteiner{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .infoem{
+                background-color: #7C1515;
+                width: 25%;
+                padding: 20px;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 450;
+            }
+
+            .logo{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .info{
+                margin-top: 20px;
+                text-align: left;
+                width: 100%;
+            }
+            
+            .menu{
+                background-color: #7C1515;
+                width: 600;
+                height: 450;
+                padding: 20px;  
+                margin-left: 20px;
+                border-radius: 8px;
+                text-align: center;
+                background-color: coral;
+            }
+            .menu-botoes{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            button{
+                padding: 15px; 
+                border: none; 
+                border-radius: 5px; 
+                background-color: white; 
+                color: black;
+                font-weight: bold; 
+                cursor: pointer;
+                width: 100%;
+
+            }
+
+            button:hover{
+                background-color: #7C1515;
+                color: white;
+            }
+
+            a{
+                width: 100%;
+                background-color: white;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a:hover{
+                background-color: #7C1515;
+                color: white;
+            }
+
+            
+        </style>
+
+    </head>
+    <body>
+        <div class="conteiner">
+            <div class="infoem">
+
+                <div class="logo">
+                    <img src="logopizza.png">
+                    <h2>Bela Pizza</h2>
+                </div>
+                <div class="info">
+                    <p><Strong>Nome do Colaborador:</Strong>Jair Messias Lula da Silva</p>
+                    <p><Strong>Ocupação:</Strong>Atendente</p>
+                    <p><Strong>Horário de Login:</Strong>12/12/2012 18:00</p>
+                </div>
+                <a href="login.html"><button class="Sair">Sair</button></a>
+            </div>
+            <div class="Menu">
+                <h1>Menu Principal</h1>
+                <div class="menu-botoes">
+                    <a href="novoPedido.html" style="text-decoration: none;">
+
+                        <button >Novo Pedido</button>
+                    </a>
+                    <a href="pedidos.html" style="text-decoration: none;"><button >Pedidos </button></a>
+                    <a href="estoque.html" style="text-decoration: none"><button >Controle de Estoque</button></a>
+                    <a href="Clientes.html" style="text-decoration: none;"><button>Clientes</button></a>
+                    <a href="relatoriovendas.html" style="text-decoration: none;"><button >Faturamento</button></a>
+                    <a href="funcionarios.html" style="text-decoration: none;"><button>Funcionários</button></a>
+                    <a class="botoes" href="CadastrarCliente.html" style="text-decoration: none;">
+
+                        <button >Cadastro de Clientes</button>
+                    </a>
+                    <button >Historico de Pedidos</button>
+                    <a href="configuracoes.html" style="text-decoration: none;"><button>Configurações</button></a>
+                    <button >Programação</button>
+                </div>
+            </div>
+         </div>
+
+
+    </body>
+</html>

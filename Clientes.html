@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes - Bela Pizza</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7c1515;
+        }
+        .topo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            background-color: #7c1515;
+            flex-direction: column;
+        }
+
+        .botoesnavegacao{
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botoesnavegacao button{
+            background-color: #7c1515;
+            border: 2px solid white;
+            color: white;
+            cursor: pointer;
+            width: 150px;
+            height: 25px;
+            border-radius: 5px;
+            margin: 3px;
+        }
+
+        .botoesnavegacao button:hover{
+            background-color: white;
+            color: black;
+            border: 2px solid #7c1515;
+        }
+
+        .botaopa button{
+            background-color: coral;
+            border: 2px solid white;
+            color: white;
+            cursor: default;
+        }
+
+        .botaopa button:hover{
+            background-color: coral;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .logoetitulo{
+            width: 1200px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .titulo{
+            color: white;
+            width: 799px;;
+            text-align: center;
+        }
+
+        .botaopa button{
+            background-color: coral;
+        }
+        .corpo{
+            width: 100%;
+            background-color: #f1f5f6;
+            height: 460px;
+        }
+    </style>
+</head> 
+<body>
+    <div class="topo">
+        <div class="botoesnavegacao">
+            <a href="menuprincipal.html" style="text-decoration: none;"><button>Menu Principal</button></a>
+            <a href="pedidos.html" style="text-decoration: none;"><button>Pedidos</button></a>
+            <a href="CadastrarCliente.html" style="text-decoration: none;"><button>Cadastrar Cliente</button></a>
+            <a href="novoPedido.html" style="text-decoration: none;"><button>Novo Pedido</button></a>
+            <a href="estoque.html" style="text-decoration: none;"><button>Estoque</button></a>
+            <a href="relatoriovendas.html" style="text-decoration: none;"><button>Faturamento</button></a>
+            <a class="botaopa" href="" style="text-decoration: none;"><button>Clientes</button></a>
+        </div>
+        <div class="logoetitulo">
+            <div class="logo">
+                <img width="200px" height="50px" src="logobela.png">
+            </div>
+            <div class="titulo">
+                <h2>Lista de Clientes</h2>
+            </div>
+        </div>
+    </div>
+    <div class="corpo">
+        teste
+    </div>
+    
+</body>
+</html>

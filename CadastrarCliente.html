@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente - Bela Pizza</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;  flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #7c1515;
+        }
+        .topo{
+            width: 1200px;
+            background-color: #7c1515;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .corpo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .logo{
+            width: 600px;
+            background-color: #7c1515;
+            height: 500px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .cadastro{
+            width: 600px;
+            background-color: #f1f5f6;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 5px;
+        }
+
+        .cliente{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input{
+            width: 450px;
+            height: 30px;
+            padding: 5px;
+        }
+
+        .cliente button{
+            width: 464px;
+            height: 40px;
+            padding: 5px;
+            background-color: coral;
+            color: white;
+            border: 2px solid coral;
+            cursor: pointer;
+
+        }
+
+        .cliente button:hover{
+            border: 2px solid white;
+        }
+
+        .ti{
+            display: flex;
+            width: 465px;
+        }
+
+        .rodape{
+            display: flex;
+            flex-direction: row;
+        }
+        .rodapelogo{
+            background-color: #7c1515;
+            width: 600px;
+            height: 80px;
+        }
+        .rodapecadastro{
+            width: 600px;
+            background-color: #f1f5f6;
+            height: 80px;
+
+        }
+
+        .topo button{
+            width: 150px;
+            height: 25px;
+            border: 2px solid white;
+            background-color: #7c1515;
+            color: white;
+            cursor: pointer;
+            margin: 3px;
+        }
+
+        .topo button:hover{
+            border: 2px solid #7c1515;
+            background-color: white;
+            color: black;
+        }
+
+        .logo button{
+            width: 100px;
+            height: 20px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9b4b4b;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+
+        }
+
+        .logo button:hover{
+            border: 1px solid #7c1515;
+        }
+
+        button{
+            border-radius: 5px;
+        }
+
+        input{
+        }
+
+        .botaopagina button:hover{
+            border: 2px solid white;
+            color: white;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <a href="menuprincipal.html" style="text-decoration: none;">
+
+            <button>Menu Principal</button>
+        </a>
+        <a href="pedidos.html" style="text-decoration: none;"><button>Pedidos</button></a>
+        <div class="botaopagina">
+            <button style="background-color: coral;">Cadastrar Cliente</button>
+        </div>
+        <a href="novoPedido.html" style="text-decoration: none;">
+
+            <button>Novo Pedido</button>
+        </a>
+        <a href="estoque.html" style="text-decoration: none;"><button>Estoque</button></a>
+        <a href="relatoriovendas.html" style="text-decoration: none;"><button>Faturamento</button></a>
+        <a href="Clientes.html" style="text-decoration: none;"><button>Clientes</button></a>
+    </div>
+    <div class="corpo">
+        <div class="logo">
+            <img width="250" height="150" src="logopizza.png">
+            <h2>Cadastro de Clientes</h2>
+            <a href=""><button>Cancelar</button></a>
+        </div>
+        <div class="cadastro">
+            <div class="ti">
+
+                <h2>Insira os dados do cliente</h2>
+            </div>
+            <form class="cliente" method="post" action="dadoscadastroclientes.php">
+                <input type="text" name="nome" placeholder="Digite o nome do cliente">
+                <br>
+                <input type="text" name="telefone" placeholder="Digite o telefone do cliente">
+                <br>
+                <input type="text" name="endereco" placeholder="Digite o endereço do cliente">
+                <br>
+                <input type="text" name="email" placeholder="Digite o e-mail do cliente">
+                <br>
+                <button type="submit" name="cadastrar">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <div class="rodape">
+        <div class="rodapelogo">
+
+        </div>
+        <div class="rodapecadastro">
+
+        </div>
+    </div>
+    
+</body>
+</html>
